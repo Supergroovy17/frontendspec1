@@ -1,18 +1,17 @@
-import React from 'react';
-import { ContactProvider } from './contexts/ContactContext';
-import ContactList from './Components/ContactList';
-import ContactDetail from './Components/ContactDetail';
+// src/App.js
 
-const App = () => {
+import React from 'react';
+import ProductList from './components/ProductList';
+import NewProductForm from './components/NewProductForm';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+function App() {
   return (
-    <ContactProvider>
-      <div>
-        <h1>Contact Management App</h1>
-        <ContactList />
-        <ContactDetail />
-      </div>
-    </ContactProvider>
+    <div className="container mt-5">
+      <ProductList />
+      <NewProductForm />
+    </div>
   );
-};
+}
 
 export default App;
